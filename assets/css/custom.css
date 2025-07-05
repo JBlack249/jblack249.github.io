@@ -1,3 +1,59 @@
+#site-header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header__logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.header__subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.header__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__nav {
+  background-color:rgb(219, 219, 219);
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: #d4a43e;
+}
+
+
+
 #site-footer {
     background-color: #1a1a1a;
     color: #fff;
