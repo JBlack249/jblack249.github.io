@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "jblack249",
     "description": "",
-    "home_page_url": "https://jblack249.github.io/jblack249.github.io",
-    "feed_url": "https://jblack249.github.io/jblack249.github.io/feed.json",
+    "home_page_url": "https://Jblack249.github.io",
+    "feed_url": "https://Jblack249.github.io/feed.json",
     "user_comment": "",
     "author": {
         "name": "Rudolf Frank"
     },
     "items": [
         {
-            "id": "https://jblack249.github.io/jblack249.github.io/zweiter-artikel.html",
-            "url": "https://jblack249.github.io/jblack249.github.io/zweiter-artikel.html",
+            "id": "https://Jblack249.github.io/zweiter-artikel.html",
+            "url": "https://Jblack249.github.io/zweiter-artikel.html",
             "title": "Zweiter Artikel",
             "summary": "Das hier ist der zweite Artikel.",
             "content_html": "\n  <p>\n    Das hier ist der zweite Artikel.\n  </p>",
@@ -24,8 +24,8 @@
             "date_modified": "2025-07-05T11:06:44+02:00"
         },
         {
-            "id": "https://jblack249.github.io/jblack249.github.io/erster-artikel.html",
-            "url": "https://jblack249.github.io/jblack249.github.io/erster-artikel.html",
+            "id": "https://Jblack249.github.io/erster-artikel.html",
+            "url": "https://Jblack249.github.io/erster-artikel.html",
             "title": "Erster Artikel",
             "summary": "Das hier ist ein erster Artikel.",
             "content_html": "<p>Das hier ist ein erster Artikel.</p>",
