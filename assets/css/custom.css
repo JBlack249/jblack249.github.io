@@ -77,18 +77,16 @@
 }
 
 .search__btn {
-  padding: 0.4rem;
-  background: transparent;
-  border: 2px solid #333;
-  border-radius: 4px;
+  //padding: 0.4rem;
+  //background: transparent;
   cursor: pointer;
 }
 
-.search__btn svg {
-  width: 16px;
-  height: 16px;
-  fill: #333;
-}
+//.search__btn svg {
+//  width: 16px;
+  //height: 16px;
+  //fill: #333;
+//}
 
 
 /* ---------- FOOTER (unverändert außer Formatierungen) ---------- */
@@ -97,6 +95,7 @@
   color: #fff;
   padding: 2rem 2rem 1.5rem;
   font-size: 0.7rem;
+  margin-top: 2rem;
 }
 
 #site-footer a {
