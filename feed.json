@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://Jblack249.github.io/zweiter-artikel.html",
-            "url": "https://Jblack249.github.io/zweiter-artikel.html",
+            "id": "https://Jblack249.github.io/zweiter-artikel/",
+            "url": "https://Jblack249.github.io/zweiter-artikel/",
             "title": "Zweiter Artikel",
             "summary": "Das hier ist der zweite Artikel.",
             "content_html": "\n  <p>\n    Das hier ist der zweite Artikel.\n  </p>",
@@ -24,8 +24,8 @@
             "date_modified": "2025-07-05T11:06:44+02:00"
         },
         {
-            "id": "https://Jblack249.github.io/erster-artikel.html",
-            "url": "https://Jblack249.github.io/erster-artikel.html",
+            "id": "https://Jblack249.github.io/erster-artikel/",
+            "url": "https://Jblack249.github.io/erster-artikel/",
             "title": "Erster Artikel",
             "summary": "Das hier ist ein erster Artikel.",
             "content_html": "<p>Das hier ist ein erster Artikel.</p>",
