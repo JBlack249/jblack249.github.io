@@ -101,7 +101,7 @@ html, body {
 }
 
 .header__nav a:hover {
-  color: #fff !important;
+  color: #d4a43e !important;
 }
 
 /* ---------- SUCHBUTTON ---------- */
@@ -275,7 +275,28 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   margin-left: 0;
   margin-bottom: 0.2rem;
   padding-left: 0;
+  text-decoration: none;
 }
+
+.footer__list li a {
+  text-decoration: none !important;
+  color: #d4a43e;
+  transition: color 0.3s;
+}
+
+.footer__list li a:hover,
+.footer__list li a:active,
+.footer__list li a:focus {
+  text-decoration: none !important;
+  color: #d4a43e !important; /* kräftiges Gelb, alternativ #d4a43e für Gold */
+}
+
+
+
+
+
+
+
 
 .footer__bottom {
   text-align: center;
@@ -320,7 +341,7 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
     right: 0.5rem;
   }
   .hero-banner {
-    height: 120px;
+    height: 200px;
   }
 }
 .hero--noimage::after {
@@ -329,14 +350,4 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   border: none !important;
   height: 0 !important;
   content: none !important;
-}
-.wrapper {
-  min-height: 0 !important;
-}
-.wrapper h1,
-p
- {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
 }
