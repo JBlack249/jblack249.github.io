@@ -94,7 +94,7 @@ html, body {
 .header__nav a {
   text-decoration: none;
   font-weight: 500;
-  color: #d4a43e !important;
+  color: #fff !important;
   transition: color 0.3s ease;
   font-size: 0.95rem;
   letter-spacing: 0.03em;
