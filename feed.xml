@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>jblack249</title>
+    <link href="https://jblack249.github.io/jblack249.github.io/feed.xml" rel="self" />
+    <link href="https://jblack249.github.io/jblack249.github.io" />
+    <updated>2025-07-05T11:06:44+02:00</updated>
+    <author>
+        <name>Rudolf Frank</name>
+    </author>
+    <id>https://jblack249.github.io/jblack249.github.io</id>
+
+    <entry>
+        <title>Zweiter Artikel</title>
+        <author>
+            <name>Rudolf Frank</name>
+        </author>
+        <link href="https://jblack249.github.io/jblack249.github.io/zweiter-artikel.html"/>
+        <id>https://jblack249.github.io/jblack249.github.io/zweiter-artikel.html</id>
+
+        <updated>2025-07-05T11:06:44+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Das hier ist der zweite Artikel.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    Das hier ist der zweite Artikel.
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Erster Artikel</title>
+        <author>
+            <name>Rudolf Frank</name>
+        </author>
+        <link href="https://jblack249.github.io/jblack249.github.io/erster-artikel.html"/>
+        <id>https://jblack249.github.io/jblack249.github.io/erster-artikel.html</id>
+
+        <updated>2025-07-05T11:06:26+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Das hier ist ein erster Artikel.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Das hier ist ein erster Artikel.</p>
+            ]]>
+        </content>
+    </entry>
+</feed>
