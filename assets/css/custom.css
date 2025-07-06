@@ -5,7 +5,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* ---------- HERO-BANNER GANZ OBEN ---------- */
+
 .hero-banner {
   position: relative;
   width: 100%;
@@ -313,9 +313,6 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   margin-right: 0.5rem;
 }
 
-
-
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .article-teaser-list {
     flex-direction: column;
@@ -350,4 +347,32 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   border: none !important;
   height: 0 !important;
   content: none !important;
+}
+
+
+
+.content__entry {
+  color: #d4a43e;
+  background-color: #000;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+.feed__content{
+  background-color: #000;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+.feed__content a, p{
+  color: #d4a43e;
+}
+.feed__title a{
+  color: #d4a43e !important;
+  font-weight: bold;
+  font-size: 1.5rem;}
+
+.content__comments,
+.comments {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
 }
