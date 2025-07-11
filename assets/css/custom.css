@@ -351,8 +351,11 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 }
 .feed__title a{
   color: #f2f2f2 !important;
-  font-weight: bold;
-  font-size: 1.5rem;}
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: 150;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;}
 
 .feed__title a:hover {
   color: #737373 !important;
@@ -368,8 +371,18 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   text-decoration: none;
 }
 .wrapper h1{
-  color: #f2f2f2;
+  color: #1E2940;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .feed__meta a{
   pointer-events: none;
 }
+.content__updated {
+  color: #0D0D0D
+}
+
+
