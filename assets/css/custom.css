@@ -1,18 +1,24 @@
 /* ---------- RESET ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-body{
+
+body {
   background-color: #737373;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: clamp(250px, 50vh, 450px);
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -41,24 +47,27 @@ body{
 }
 
 .hero-banner__title {
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 300;
   text-transform: uppercase;
   font-family: "Courier New", Courier, monospace;
   margin: 0;
-  letter-spacing: 0.5em;
+  letter-spacing: clamp(0.1em, 1vw, 0.5em);
   color: #F2F2F2;
-  
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .hero-banner__subtitle {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 400;
-  letter-spacing: 0.15em;
+  letter-spacing: clamp(0.05em, 0.5vw, 0.15em);
   color: #F2F2F2;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 /* ---------- HEADER & NAVIGATION ---------- */
@@ -74,7 +83,7 @@ body{
 
 .header__nav {
   background-color: #0D0D0D;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem clamp(1rem, 4vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +92,8 @@ body{
   border: none;
   box-shadow: none;
   z-index: 10;
+  flex-wrap: wrap;
+  min-height: 3rem;
 }
 
 .nav__center {
@@ -96,7 +107,9 @@ body{
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.5rem, 3vw, 1rem);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header__nav a {
@@ -116,20 +129,23 @@ body{
 .category-list {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: clamp(0.8rem, 3vw, 1.2rem);
   margin: 2rem 0 1.5rem 0;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .category-list a {
   display: inline-block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem clamp(0.8rem, 3vw, 1.2rem);
   border-radius: 20px;
   background: #222;
   color: #f2f2f2;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 .category-list a:hover {
@@ -139,18 +155,20 @@ body{
 
 /* ---------- BLOG-ARTIKEL-TEASER ---------- */
 .article-teaser-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(1rem, 4vw, 2rem);
+  justify-items: center;
   margin-bottom: 3rem;
+  padding: 0 clamp(1rem, 4vw, 2rem);
 }
 
-.article-teaser {;
+.article-teaser {
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   overflow: hidden;
-  width: 320px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s;
@@ -163,12 +181,13 @@ body{
 
 .article-teaser__img {
   width: 100%;
-  height: 180px;
+  height: clamp(160px, 20vw, 200px);
   object-fit: cover;
 }
 
 .article-teaser__content {
-  padding: 1.2rem;
+  padding: clamp(1rem, 3vw, 1.2rem);
+  flex-grow: 1;
 }
 
 .article-teaser__category {
@@ -181,16 +200,18 @@ body{
 }
 
 .article-teaser__title {
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
   font-weight: 600;
   margin: 0 0 0.7rem 0;
   color: #222;
+  line-height: 1.4;
 }
 
 .article-teaser__excerpt {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   color: #444;
   margin-bottom: 0.7rem;
+  line-height: 1.5;
 }
 
 /* ---------- LINIEN & HR ENTFERNEN ---------- */
@@ -205,8 +226,8 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 #site-footer {
   background-color: #0D0D0D;
   color: #f2f2f2;
-  padding: 2rem 2rem 1.5rem;
-  font-size: 0.7rem;
+  padding: clamp(1.5rem, 4vw, 2rem) clamp(1rem, 4vw, 2rem) 1.5rem;
+  font-size: clamp(0.65rem, 2vw, 0.7rem);
   margin-top: 2rem;
 }
 
@@ -217,19 +238,18 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 
 #site-footer a:hover {
   text-decoration: none;
-  color: #737373;
+  color: #5c5c5c;
 }
 
 .footer__columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(2rem, 5vw, 3rem);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer__col {
-  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -272,7 +292,7 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 .footer__list li a:active,
 .footer__list li a:focus {
   text-decoration: none !important;
-  color: #f2f2f2 !important; 
+  color: #5c5c5c !important; 
 }
 
 
@@ -297,32 +317,99 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   margin-right: 0.5rem;
 }
 
-@media (max-width: 900px) {
+/* ---------- RESPONSIVE MEDIA QUERIES ---------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header__nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  .header__nav ul {
+    gap: 0.5rem;
+  }
+  
+  .category-list {
+    gap: 0.8rem;
+    padding: 0 0.5rem;
+  }
+  
   .article-teaser-list {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
-  .hero-banner {
-    height: 220px;
-  }
-  .hero-banner__title {
-    font-size: 1.5rem;
-  }
-  .hero-banner__subtitle {
-    font-size: 1rem;
+  
+  .footer__columns {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
   }
 }
 
-@media (max-width: 600px) {
+/* Mobile Phones */
+@media (max-width: 480px) {
   .header__nav {
     flex-direction: column;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
-  .search {
-    right: 0.5rem;
+  
+  .header__nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
   }
-  .hero-banner {
-    height: 200px;
+  
+  .category-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .category-list a {
+    width: fit-content;
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  .article-teaser-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .footer__columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer__col {
+    align-items: center;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .article-teaser-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .hero-banner__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .hero-banner__subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .article-teaser-list {
+    padding: 0 0.25rem;
   }
 }
 .hero--noimage::after {
@@ -336,26 +423,31 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 
 
 .content__entry {
+  margin: 0 auto;
+  max-width: 800px;
   color: #f2f2f2;
-  background-color: #0D0D0D;
-  padding: 1.5rem;
+  background-color: #5c5c5c;
+  padding: clamp(1rem, 4vw, 1.5rem);
   border-radius: 4px;
 }
-.feed__content{
-  background-color: #0D0D0D;
-  padding: 1.5rem;
+
+.feed__content {
+  background-color: #5c5c5c;
+  padding: clamp(1rem, 4vw, 1.5rem);
   border-radius: 4px;
 }
-.feed__content a, p{
+.feed__content a, p {
   color: #fff;
 }
-.feed__title a{
+
+.feed__title a {
   color: #f2f2f2 !important;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 150;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;}
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  letter-spacing: 0.05em;
+}
 
 .feed__title a:hover {
   color: #737373 !important;
@@ -367,12 +459,19 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
 .feed__readmore:hover {
   color: #737373;
 }
-.feed__readmore{
+.feed__readmore {
   text-decoration: none;
 }
-.wrapper h1{
-  color: #1E2940;
-  font-size: 3rem;
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.wrapper h1 {
+  color: #f2f2f2;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   text-transform: uppercase;
