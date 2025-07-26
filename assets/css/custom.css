@@ -438,6 +438,10 @@ hr, .article-teaser-list hr, .header__nav hr, #site-header hr {
   padding: clamp(1rem, 4vw, 1.5rem);
   border-radius: 4px;
 }
+.content__entry h2{
+  color: #f2f2f2;
+}
+
 
 .feed__content {
   background-color: #5c5c5c;
